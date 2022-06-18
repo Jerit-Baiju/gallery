@@ -1,129 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% load static %}
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jerit Baiju | Gallery</title>
-    <meta name="title" content="Jerit Baiju" />
-    <meta
-      name="description"
-      content="I'm a Web Developer. I can design and develop Web Apps. Knows Python, Flask, Django, React, Node JS and about many frameworks."
-    />
-    <meta name="keywords" content="Jerit,Baiju,Jerit Baiju,Web developer,vandiperiyar, jerit baiju vandiperiyar" />
-    <meta property="og:image" content="{% static 'favicon.ico' %}" />
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
-    <meta name="revisit-after" content="1 days" />
-    <meta name="author" content="Jerit Baiju" />
-    <meta name="mobile-web-app-capable" content="yes" >
-    <meta name="google-site-verification" content="CS_kPF3AaEGtbODiiQPzSq96NKq54HEILn0As0Xm7xE" />
-    <link
-      rel="shortcut icon"
-      href="{% static 'favicon.ico' %}"
-      type="image/x-icon"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+{% load static %}
 
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Jerit Baiju | Gallery</title>
+	<meta name="title" content="Jerit Baiju" />
+	<meta name="description"
+		content="I'm a Web Developer. I can design and develop Web Apps. Knows Python, Flask, Django, React, Node JS and about many frameworks." />
+	<meta name="keywords" content="Jerit,Baiju,Jerit Baiju,Web developer,vandiperiyar, jerit baiju vandiperiyar" />
+	<meta property="og:image" content="{% static 'favicon.ico' %}" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="English" />
+	<meta name="revisit-after" content="1 days" />
+	<meta name="author" content="Jerit Baiju" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="google-site-verification" content="CS_kPF3AaEGtbODiiQPzSq96NKq54HEILn0As0Xm7xE" />
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  <body
-    class="{% if dark == True %} bg-dark text-white{% else %} bg-light {% endif %}"
-  >
-    {% include 'base/navbar.html' %}
-    <div style="height: 4em"></div>
-    <div class="container">
-    
-    
-    
-    <!-- Gallery -->
-<div class="row">
+</head>
 
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-  		<img
-		  src="{% static 'images/9.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/2.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/3.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/7.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/8.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		
-  </div>
-  
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-		<img
-		  src="{% static 'images/10.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/0.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/1.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		
-  </div>
-  
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-  		<img
-		  src="{% static 'images/11.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/5.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		
-		<img
-		  src="{% static 'images/6.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		<img
-		  src="{% static 'images/4.jpg' %}"
-		  class="w-100 shadow-1-strong rounded mb-4"
-		  alt="Jerit Baiju"
-		/>
-		
-  </div>
-  
+<body class="{% if dark == True %} bg-dark text-white{% else %} bg-light {% endif %}">
+	{% include 'base/navbar.html' %}
+	<div style="height: 4em"></div>
+	<div class="container">
 
-  
-</div>
-<!-- Gallery -->
-    
-    
-    
-      <hr />
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+
+
+		<!-- Gallery -->
+		<div class="row">
+
+			<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+				<img src="{% static 'images/9.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/2.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/3.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/7.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/8.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+
+			</div>
+
+			<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+				<img src="{% static 'images/10.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/0.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/1.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+
+			</div>
+
+			<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+				<img src="{% static 'images/11.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/12.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/5.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+
+				<img src="{% static 'images/6.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+				<img src="{% static 'images/4.jpg' %}" class="w-100 shadow-1-strong rounded mb-4" alt="Jerit Baiju" />
+
+			</div>
+
+
+
+		</div>
+		<!-- Gallery -->
+
+
+
+		<hr />
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
